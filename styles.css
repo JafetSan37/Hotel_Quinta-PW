@@ -147,7 +147,7 @@ body {
 
 .img-info {
     flex: 1; /* Toma la otra mitad */
-    max-width: 400px; /* Hace la imagen más grande y llamativa */
+    max-width: 550px; /* Hace la imagen más grande y llamativa */
     border-radius: 12px;
     box-shadow: var(--shadow);
     object-fit: cover;
@@ -165,8 +165,8 @@ body {
 }
 
 .img-habitacion {
-    width: 320px; /*Aumento del tamaño*/
-    height: 220px;
+    width: 384px; /*Aumento del tamaño*/
+    height: 264px;
     object-fit: cover;
     border: 3px solid var(--accent);
     border-radius: 8px;
