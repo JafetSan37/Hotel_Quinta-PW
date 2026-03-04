@@ -1,53 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es-MX">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Contacto - Hotel Quinta Dalam</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contáctanos - Hotel Quinta Dalam</title>
+  <link rel="stylesheet" href="catalogo_styles.css" />
+  <link rel="stylesheet" href="css/contacto.css">
 </head>
 
 <body>
-    <header>
-        <h1 align="center">
-            <i>Hotel Quinta Dalam</i>
-        </h1><br>
+  <header class="hero-top">
+    <img class="hero-logo" src="src/logo.png" alt="Hotel Quinta Dalam" />
+  </header>
+
+  <div class="panel">
+    <header class="panel-header">
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <span class="nav-sep" aria-hidden="true"></span>
+
+        <a href="catalogo.html">Habitaciones</a>
+        <span class="nav-sep" aria-hidden="true"></span>
+
+        <a href="mision.html">Sobre nosotros</a>
+        <span class="nav-sep" aria-hidden="true"></span>
+
+        <a class="active" href="contacto.htm" aria-current="page">Contáctanos</a>
+      </nav>
+
+      <h1 class="headline">Contáctanos</h1>
     </header>
-    <nav>
-        <div align="center">
-            <a href="index.html">Inicio</a> |
-            <a href="catalogo.html">Habitaciones</a> |
-            <a href="mision.html">Misión</a> |
-            <a href="vision.html">Visión</a> |
-            <b>Contacto</b>
+
+    <main class="content">
+      <section class="contact-card" aria-label="Información de contacto">
+        <div class="contact-intro">
+          <p class="contact-lead">
+            ¿Tienes alguna duda o pregunta? <strong>¡No dudes en contactarnos!</strong>
+          </p>
+          <img class="contact-icon" src="src/contacto.png" alt="Ícono de contacto" />
         </div>
-    </nav>
-    <h1>Contáctanos!</h1>
-    <main>
-        <p>¿Tienes alguna duda o pregunta? <strong>¡¡No dudes en contactarnos!!</strong></p>
-        <img src="src/contacto.png" width="50px" height="50px">
-        <p>Teléfono: <a href="tel:+524431574706">+52 443 257 4706</a></p>
-        <p>Email: <a href="mailto:contacto@quintadalam.com">contacto@quintadalam.com</a></p>
-        <p>Dirección: Calle #, Colonia, CP, Ciudad, Michoacán</p>
+
+        <div class="contact-list">
+          <div class="contact-row">
+            <span class="contact-label">Teléfono</span>
+            <a class="contact-link" href="tel:+524431574706">+52 443 157 4706</a>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-label">Email</span>
+            <a class="contact-link" href="mailto:contacto@quintadalam.com">contacto@quintadalam.com</a>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-label">Dirección</span>
+            <span class="contact-text">Calle #, Colonia, CP, Ciudad, Michoacán</span>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-        <a href="https://www.facebook.com/profile.php?id=61584681841684" target="_blank">
-            <img src="src/facebook.png" width="40px" height="40px">
+    <footer class="site-footer">
+      <div class="social">
+        <a class="social-link" href="https://www.facebook.com/profile.php?id=61584681841684" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Hotel Quinta Dalam">
+          <img src="src/facebook.png" alt="Facebook" class="social-icon" />
         </a>
 
-        <a href="https://www.instagram.com/quintadalam?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-            target="_blank">
-            <img id="instagram" src="src/instagram.png" width="40px" height="40px">
+        <a class="social-link" href="https://www.instagram.com/quintadalam?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Hotel Quinta Dalam">
+          <img src="src/instagram.png" alt="Instagram" class="social-icon" />
         </a>
 
-        <a href="https://www.tiktok.com/@quintadalam?lang=es" target="_blank">
-            <img id="tiktok" src="src/tiktok.png" width="40px" height="40px">
+        <a class="social-link" href="https://www.tiktok.com/@quintadalam?lang=es" target="_blank" rel="noopener noreferrer" aria-label="TikTok de Hotel Quinta Dalam">
+          <img src="src/tiktok.png" alt="TikTok" class="social-icon" />
         </a>
+      </div>
 
-        <br>
-        &copy; Hotel Quinta Dalam, 2026
+      <p class="copyright">
+        &copy; Hotel Quinta Dalam, <span id="year"></span>
+      </p>
     </footer>
+  </div>
 
+  <script>
+    const yearEl = document.getElementById("year");
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
 </body>
-
 </html>
