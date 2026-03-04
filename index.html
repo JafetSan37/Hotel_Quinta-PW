@@ -9,9 +9,9 @@
 
 <body>
     <header class="hero-top">
-        <h1 style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Hotel Quinta Dalam</h1>
+        <img class="hero-logo" src="src/logo.png" alt="Hotel Quinta Dalam">
     </header>
-
+    
     <div class="panel">
         <header class="panel-header">
             <nav class="nav" aria-label="Navegación principal">
@@ -73,20 +73,24 @@
         </main>
         
         <footer class="site-footer">
-            <div class="footer-inner">
-                <a href="https://www.facebook.com/profile.php?id=61584681841684" target="_blank">
-                    <img src="src/facebook.png" width="30px" height="30px" alt="Facebook">
-                </a>
-                <a href="https://www.instagram.com/quintadalam" target="_blank">
-                    <img src="src/instagram.png" width="30px" height="30px" alt="Instagram">
-                </a>
-                <a href="https://www.tiktok.com/@quintadalam" target="_blank">
-                    <img src="src/tiktok.png" width="30px" height="30px" alt="TikTok">
-                </a>
-                <br><br>
-                <p>&copy; Hotel Quinta Dalam, 2026</p>
-            </div>
-        </footer>
+        <div class="social">
+            <a class="social-link" href="https://www.facebook.com/profile.php?id=61584681841684" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Hotel Quinta Dalam">
+                <img src="src/facebook.png" alt="Facebook" class="social-icon" />
+            </a>
+
+            <a class="social-link" href="https://www.instagram.com/quintadalam?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Hotel Quinta Dalam">
+                <img src="src/instagram.png" alt="Instagram" class="social-icon" />
+            </a>
+
+            <a class="social-link" href="https://www.tiktok.com/@quintadalam?lang=es" target="_blank" rel="noopener noreferrer" aria-label="TikTok de Hotel Quinta Dalam">
+                <img src="src/tiktok.png" alt="TikTok" class="social-icon" />
+            </a>
+        </div>
+
+      <p class="copyright">
+        &copy; Hotel Quinta Dalam, <span id="year"></span>
+      </p>
+    </footer>
         
     </div>
 </body>

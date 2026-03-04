@@ -58,7 +58,7 @@ body {
 }
 
 .hero-logo {
-  height: 60px; 
+  height: 100px; 
   width: auto;
   display: block;
   filter: drop-shadow(0 10px 16px rgba(0,0,0,.25));
@@ -102,10 +102,10 @@ body {
 
 /*Pie de página (footer)*/
 .site-footer {
-  padding: 18px;
-  border-top: 1px solid rgba(0,0,0,.12);
-  background: rgba(255,255,255,.35);
-  margin-top: 40px;
+  padding: 18px 12px;
+  text-align: center;
+  background: rgba(255, 255, 255, .35);
+  border-top: 1px solid rgba(0, 0, 0, .12);
 }
 
 .footer-inner {
@@ -203,4 +203,45 @@ body {
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+}
+
+.site-footer {
+  padding: 18px 12px;
+  text-align: center;
+  background: rgba(255, 255, 255, .35);
+  border-top: 1px solid rgba(0, 0, 0, .12);
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  transition: transform .15s ease, background-color .15s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+  background: rgba(0, 0, 0, .06);
+}
+
+.social-link:focus-visible {
+  outline: 3px solid rgba(11, 74, 120, .55);
+  outline-offset: 3px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  display: block;
 }
