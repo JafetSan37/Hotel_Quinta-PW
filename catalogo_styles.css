@@ -28,7 +28,7 @@ body{
   background-image: url("src/fondo.png");
   background-size: cover;
   background-position: center top;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: scroll;
 }
 
@@ -38,7 +38,7 @@ body{
 
 /* Panel centrado encima del fondo */
 .panel{
-  width: min(1250px, calc(100% - 48px));
+  width: min(1500px, calc(100% - 48px));
   margin: 24px auto;
   background: var(--panel-bg);
   border-radius: 8px;
@@ -110,7 +110,7 @@ body{
 /* Grid escalable */
 .rooms-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  grid-template-columns: repeat(2,1fr);
   gap: 44px 52px;
   padding: 6px 4px 10px;
 }
@@ -224,6 +224,54 @@ body{
   font-size: 14px;
 }
 
+.site-footer{
+  padding: 18px 12px;
+  text-align: center;
+  background: rgba(255,255,255,.35);
+  border-top: 1px solid rgba(0,0,0,.12);
+}
+
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.social-link{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  transition: transform .15s ease, background-color .15s ease;
+}
+
+.social-link:hover{
+  transform: translateY(-2px);
+  background: rgba(0,0,0,.06);
+}
+
+/* accesibilidad: que se vea al navegar con teclado */
+.social-link:focus-visible{
+  outline: 3px solid rgba(11, 74, 120, .55);
+  outline-offset: 3px;
+}
+
+.social-icon{
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.copyright{
+  margin: 0;
+  font-size: 14px;
+  color: rgba(0,0,0,.75);
+}
+
 /* Modal Detalles */
 .modal{
   position: fixed;
@@ -294,7 +342,56 @@ body{
 /* Responsive */
 @media (max-width: 520px){
   .panel{ width: calc(100% - 20px); }
-  .rooms-grid{ grid-template-columns: 1fr; }
-  .room-inner{ gap: 12px; }
-  .preview-frame{ width: 140px; height: 86px; }
+  @media (max-width: 650px){
+
+  /* 1) una sola columna de cards */
+  .rooms-grid{
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  /* 2) el contenido interno de cada card en vertical */
+  .room-inner{
+    display: flex;              /* fuerza columna aunque antes fuera grid */
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* 3) preview grande arriba */
+  .preview-frame{
+    width: min(320px, 100%);
+    height: 180px;
+  }
+
+  /* 4) texto centrado */
+  .room-info{
+    width: 100%;
+    text-align: center;
+    padding-right: 0;           /* IMPORTANTÍSIMO si antes pusiste padding-right */
+  }
+
+  /* 5) botón reservar NO debe estar absoluto en móvil (si lo tienes así) */
+  .btn-reserve{
+    position: static;           /* quita absolute */
+    transform: none;            /* por si tenías translateY */
+    width: 170px;
+    margin: 6px auto 0;
+    text-align: center;
+  }
+
+  /* 6) guitarra un poco más chica para que no estorbe */
+  .room-guitar{
+    width: 56px;
+    top: -16px;
+    left: -10px;
+  }
+}
+  .nav{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 16px;
+    text-align: center;
+  }
+  .nav-sep{display: none;}
 }
