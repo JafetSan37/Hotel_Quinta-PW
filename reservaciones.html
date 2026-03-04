@@ -4,53 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <title>Reservaciones - Hotel Quinta Dalam</title>
+    <link rel="stylesheet" href="index_styles.css">
+    <link rel="stylesheet" href="formularios.css">
 </head>
 
 <body>
-    <header>
-        <h1 align="center">
-            <i>Hotel Quinta Dalam</i>
-        </h1><br>
+    <header class="hero-top">
+        <h1 style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Hotel Quinta Dalam</h1>
     </header>
     
-    <nav>
-        <div align="center">
-            <a href="index.html">Inicio</a> |
-            <a href="catalogo.html">Habitaciones</a> |
-            <a href="mision.html">Misión</a> |
-            <a href="vision.html">Visión</a> |
-            <a href="contacto.htm">Contacto</a>
-        </div>
-    </nav>
-    <hr>
+    <div class="panel">
+        <header class="panel-header">
+            <nav class="nav" aria-label="Navegación principal">
+                <a href="index.html">Inicio</a>
+                <span class="nav-sep" aria-hidden="true"></span>
+                <a href="catalogo.html">Habitaciones</a>
+                <span class="nav-sep" aria-hidden="true"></span>
+                <a href="mision.html">Misión</a>
+                <span class="nav-sep" aria-hidden="true"></span>
+                <a href="vision.html">Visión</a>
+                <span class="nav-sep" aria-hidden="true"></span>
+                <a href="contacto.htm">Contacto</a>
+            </nav>
+        </header>
 
-    <main>
-        <section align="center">
-            <h2>Gestión de Reservaciones</h2>
-            <p>Por favor, llena los datos para registrar tu reservación.</p>
+        <main class="content">
+            <section class="seccion-centrada">
+                <h2>Gestión de Reservaciones</h2>
+                <p>Por favor, llena los datos para registrar tu reservación.</p>
+            </section>
             
             <form action="#" method="post">
                 <fieldset>
                     <legend>Datos del Huésped</legend>
-                    <label for="nombre">Nombre Completo:</label><br>
-                    <input type="text" id="nombre" name="nombre" required size="40"><br><br>
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
 
-                    <label for="correo">Correo Electrónico:</label><br>
-                    <input type="email" id="correo" name="correo" required size="40"><br><br>
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
 
-                    <label for="telefono">Teléfono:</label><br>
-                    <input type="tel" id="telefono" name="telefono" required><br><br>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej. 443 123 4567" required>
                 </fieldset>
-                <br>
+                
                 <fieldset>
                     <legend>Detalles de la Estancia</legend>
-                    <label for="fecha_llegada">Fecha de Check-in:</label>
-                    <input type="date" id="fecha_llegada" name="fecha_llegada" required>
-                    
-                    <label for="fecha_salida">Fecha de Check-out:</label>
-                    <input type="date" id="fecha_salida" name="fecha_salida" required><br><br>
+                    <div style="display: flex; gap: 20px;">
+                        <div style="flex: 1;">
+                            <label for="fecha_llegada">Fecha de Check-in:</label>
+                            <input type="date" id="fecha_llegada" name="fecha_llegada" required>
+                        </div>
+                        <div style="flex: 1;">
+                            <label for="fecha_salida">Fecha de Check-out:</label>
+                            <input type="date" id="fecha_salida" name="fecha_salida" required>
+                        </div>
+                    </div>
 
-                    <label for="habitacion">Selecciona tu Habitación Mágica:</label><br>
+                    <label for="habitacion">Selecciona tu Habitación Mágica:</label>
                     <select id="habitacion" name="habitacion" required>
                         <option value="">-- Elige una opción --</option>
                         <option value="101">101 - Tzintzuntzan</option>
@@ -68,44 +78,59 @@
                         <option value="207">207 - Cuanajo</option>
                     </select>
                 </fieldset>
-                <br>
-                <button type="submit">Guardar Reservación</button>
-                <button type="reset">Limpiar Formulario</button>
+                
+                <div style="text-align: center;">
+                    <button type="submit" class="btn-formulario btn-guardar">Guardar Reservación</button>
+                    <button type="reset" class="btn-formulario btn-limpiar">Limpiar Formulario</button>
+                </div>
             </form>
-            <br>
-            <hr width="50%">
+
+            <hr style="border: 1px solid rgba(0,0,0,0.1); margin: 40px 0;">
+
             <div id="consulta-reservacion">
-                <h3>¿Ya tienes reservación? Consulta su estado</h3>
-                <p>Ingresa tu folio de reservación o correo electrónico para verificar los detalles.</p>
+                <section class="seccion-centrada">
+                    <h3>¿Ya tienes reservación? Consulta su estado</h3>
+                    <p>Ingresa tu folio de reservación o correo electrónico para verificar los detalles.</p>
+                </section>
                 
                 <form action="#" method="get">
                     <label for="folio">Folio o Correo:</label>
-                    <input type="text" id="folio" name="folio" placeholder="Ej. QD-12345 o tu@correo.com" required size="30">
+                    <input type="text" id="folio" name="folio" placeholder="Ej. QD-12345 o tu@correo.com" required>
                     
-                    <button type="submit">Consultar Reservación</button>
+                    <div style="text-align: center;">
+                        <button type="submit" class="btn-formulario btn-guardar">Consultar Reservación</button>
+                    </div>
                 </form>
-                <br>
-                <fieldset>
+                
+                <fieldset style="margin-top: 20px;">
                     <legend>Resultado de la Búsqueda</legend>
-                    <p><b>Folio:</b> QD-12345</p>
-                    <p><b>Huésped:</b> Juan Pérez</p>
-                    <p><b>Habitación:</b> 102 - Paracho</p>
+                    <p style="margin-bottom: 8px;"><b>Folio:</b> QD-12345</p>
+                    <p style="margin-bottom: 8px;"><b>Huésped:</b> Juan Pérez</p>
+                    <p style="margin-bottom: 20px;"><b>Habitación:</b> 102 - Paracho</p>
                     
-                    <form action="#" method="post">
-                        <button type="button">Modificar Datos</button>
-                        <button type="button">Cancelar Reservación</button>
+                    <form action="#" method="post" style="text-align: center;">
+                        <button type="button" class="btn-formulario btn-guardar">Modificar Datos</button>
+                        <button type="button" class="btn-formulario btn-cancelar">Cancelar Reservación</button>
                     </form>
                 </fieldset>
-                <br>
             </div>
-        </section>
-    </main>
-    <hr>
+        </main>
 
-    <footer>
-        <div align="center">
-            <p>&copy; Hotel Quinta Dalam, 2026</p>
-        </div>
-    </footer>
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <a href="https://www.facebook.com/profile.php?id=61584681841684" target="_blank">
+                    <img src="src/facebook.png" width="30px" height="30px" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/quintadalam" target="_blank">
+                    <img src="src/instagram.png" width="30px" height="30px" alt="Instagram">
+                </a>
+                <a href="https://www.tiktok.com/@quintadalam" target="_blank">
+                    <img src="src/tiktok.png" width="30px" height="30px" alt="TikTok">
+                </a>
+                <br><br>
+                <p>&copy; Hotel Quinta Dalam, 2026</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
