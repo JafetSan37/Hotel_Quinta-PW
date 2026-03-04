@@ -9,19 +9,14 @@
 </head>
 
 <body>
-    <!-- Fondo -->
     <div class="bg" aria-hidden="true"></div>
 
-    <!-- Logo fuera del panel (sobre la imagen de fondo) -->
     <header class="hero-top">
         <img class="hero-logo" src="src/logo.png" alt="Hotel Quinta Dalam" />
     </header>
 
-    <!-- Panel principal sobre el fondo -->
     <div class="panel">
         <header class="panel-header">
-            <!-- (YA NO VA EL LOGO AQUÍ) -->
-
             <nav class="nav" aria-label="Navegación principal">
                 <a href="index.html">Inicio</a>
                 <span class="nav-sep" aria-hidden="true"></span>
@@ -40,20 +35,23 @@
 
         <main class="content">
             <section class="rooms-grid" aria-label="Listado de habitaciones">
-                <!-- Duplicas este <article> para agregar más habitaciones -->
-
                 <article class="room-card" data-room="Habitación 1" data-price="$Precio.00"
                     data-desc="Descripción de ejemplo para Habitación 1.">
-                    <img class="room-guitar" src="tmp/guitarra.png" alt="" aria-hidden="true" />
                     <div class="room-inner">
                         <div class="preview-frame">
                             <img src="src/default.png" alt="Vista previa de Habitación 1" />
                         </div>
 
                         <div class="room-info">
-                            <h3 class="room-name">Suite Quinceo</h3>
+                            <h3 class="room-name">Suite Quencio</h3>
                             <p class="room-price">$$$$</p>
-                            <button class="btn-details" type="button">Detalles</button>
+                            <button class="btn-details" type="button">
+                                Detalles
+                                <svg class="info-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 2a10 10 0 1 0 0 20a10 10 0 0 0 0-20Zm0 7.2a1.2 1.2 0 1 1 0-2.4a1.2 1.2 0 0 1 0 2.4ZM10.8 11a1.2 1.2 0 0 1 2.4 0v7a1.2 1.2 0 0 1-2.4 0v-7Z" />
+                                </svg>
+                            </button>
                         </div>
 
                         <a class="btn-reserve" href="reserva.html" target="_blank" rel="noopener">RESERVAR</a>
@@ -62,180 +60,256 @@
 
                 <article class="room-card" data-room="Habitación 2" data-price="$Precio.00"
                     data-desc="Descripción de ejemplo para Habitación 2.">
-                    <img class="room-guitar" src="tmp/guitarra.png" alt="" aria-hidden="true" />
                     <div class="room-inner">
                         <div class="preview-frame">
                             <img src="src/default.png" alt="Vista previa de Habitación 2" />
                         </div>
+
                         <div class="room-info">
                             <h3 class="room-name">Coeneo</h3>
                             <p class="room-price">$$$</p>
-                            <button class="btn-details" type="button">Detalles</button>
+                            <button class="btn-details" type="button">
+                                Detalles
+                                <svg class="info-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 2a10 10 0 1 0 0 20a10 10 0 0 0 0-20Zm0 7.2a1.2 1.2 0 1 1 0-2.4a1.2 1.2 0 0 1 0 2.4ZM10.8 11a1.2 1.2 0 0 1 2.4 0v7a1.2 1.2 0 0 1-2.4 0v-7Z" />
+                                </svg>
+                            </button>
                         </div>
+
                         <a class="btn-reserve" href="reserva.html" target="_blank" rel="noopener">RESERVAR</a>
                     </div>
                 </article>
 
                 <article class="room-card" data-room="Habitación 3" data-price="$Precio.00"
                     data-desc="Descripción de ejemplo para Habitación 3.">
-                    <img class="room-guitar" src="tmp/guitarra.png" alt="" aria-hidden="true" />
                     <div class="room-inner">
                         <div class="preview-frame">
                             <img src="src/default.png" alt="Vista previa de Habitación 3" />
                         </div>
+
                         <div class="room-info">
                             <h3 class="room-name">Tzintzuntzan</h3>
                             <p class="room-price">$$$</p>
-                            <button class="btn-details" type="button">Detalles</button>
+                            <button class="btn-details" type="button">
+                                Detalles
+                                <svg class="info-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 2a10 10 0 1 0 0 20a10 10 0 0 0 0-20Zm0 7.2a1.2 1.2 0 1 1 0-2.4a1.2 1.2 0 0 1 0 2.4ZM10.8 11a1.2 1.2 0 0 1 2.4 0v7a1.2 1.2 0 0 1-2.4 0v-7Z" />
+                                </svg>
+                            </button>
                         </div>
+
                         <a class="btn-reserve" href="reserva.html" target="_blank" rel="noopener">RESERVAR</a>
                     </div>
                 </article>
 
                 <article class="room-card" data-room="Habitación 4" data-price="$Precio.00"
                     data-desc="Descripción de ejemplo para Habitación 4.">
-                    <img class="room-guitar" src="tmp/guitarra.png" alt="" aria-hidden="true" />
                     <div class="room-inner">
                         <div class="preview-frame">
                             <img src="src/default.png" alt="Vista previa de Habitación 4" />
                         </div>
+
                         <div class="room-info">
                             <h3 class="room-name">Yunuen</h3>
                             <p class="room-price">$$$</p>
-                            <button class="btn-details" type="button">Detalles</button>
+                            <button class="btn-details" type="button">
+                                Detalles
+                                <svg class="info-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 2a10 10 0 1 0 0 20a10 10 0 0 0 0-20Zm0 7.2a1.2 1.2 0 1 1 0-2.4a1.2 1.2 0 0 1 0 2.4ZM10.8 11a1.2 1.2 0 0 1 2.4 0v7a1.2 1.2 0 0 1-2.4 0v-7Z" />
+                                </svg>
+                            </button>
                         </div>
+
                         <a class="btn-reserve" href="reserva.html" target="_blank" rel="noopener">RESERVAR</a>
                     </div>
                 </article>
 
                 <article class="room-card" data-room="Habitación 5" data-price="$Precio.00"
                     data-desc="Descripción de ejemplo para Habitación 5.">
-                    <img class="room-guitar" src="tmp/guitarra.png" alt="" aria-hidden="true" />
                     <div class="room-inner">
                         <div class="preview-frame">
                             <img src="src/default.png" alt="Vista previa de Habitación 5" />
                         </div>
+
                         <div class="room-info">
                             <h3 class="room-name">Patzcuaro</h3>
                             <p class="room-price">$$$</p>
-                            <button class="btn-details" type="button">Detalles</button>
+                            <button class="btn-details" type="button">
+                                Detalles
+                                <svg class="info-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 2a10 10 0 1 0 0 20a10 10 0 0 0 0-20Zm0 7.2a1.2 1.2 0 1 1 0-2.4a1.2 1.2 0 0 1 0 2.4ZM10.8 11a1.2 1.2 0 0 1 2.4 0v7a1.2 1.2 0 0 1-2.4 0v-7Z" />
+                                </svg>
+                            </button>
                         </div>
+
                         <a class="btn-reserve" href="reserva.html" target="_blank" rel="noopener">RESERVAR</a>
                     </div>
                 </article>
 
                 <article class="room-card" data-room="Habitación 6" data-price="$Precio.00"
                     data-desc="Descripción de ejemplo para Habitación 6.">
-                    <img class="room-guitar" src="tmp/guitarra.png" alt="" aria-hidden="true" />
                     <div class="room-inner">
                         <div class="preview-frame">
                             <img src="src/default.png" alt="Vista previa de Habitación 6" />
                         </div>
+
                         <div class="room-info">
                             <h3 class="room-name">Janitzio</h3>
                             <p class="room-price">$$$</p>
-                            <button class="btn-details" type="button">Detalles</button>
+                            <button class="btn-details" type="button">
+                                Detalles
+                                <svg class="info-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 2a10 10 0 1 0 0 20a10 10 0 0 0 0-20Zm0 7.2a1.2 1.2 0 1 1 0-2.4a1.2 1.2 0 0 1 0 2.4ZM10.8 11a1.2 1.2 0 0 1 2.4 0v7a1.2 1.2 0 0 1-2.4 0v-7Z" />
+                                </svg>
+                            </button>
                         </div>
+
                         <a class="btn-reserve" href="reserva.html" target="_blank" rel="noopener">RESERVAR</a>
                     </div>
                 </article>
 
                 <article class="room-card" data-room="Habitación 7" data-price="$Precio.00"
                     data-desc="Descripción de ejemplo para Habitación 7.">
-                    <img class="room-guitar" src="tmp/guitarra.png" alt="" aria-hidden="true" />
                     <div class="room-inner">
                         <div class="preview-frame">
                             <img src="src/default.png" alt="Vista previa de Habitación 7" />
                         </div>
+
                         <div class="room-info">
                             <h3 class="room-name">Morelia</h3>
                             <p class="room-price">$$$</p>
-                            <button class="btn-details" type="button">Detalles</button>
+                            <button class="btn-details" type="button">
+                                Detalles
+                                <svg class="info-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 2a10 10 0 1 0 0 20a10 10 0 0 0 0-20Zm0 7.2a1.2 1.2 0 1 1 0-2.4a1.2 1.2 0 0 1 0 2.4ZM10.8 11a1.2 1.2 0 0 1 2.4 0v7a1.2 1.2 0 0 1-2.4 0v-7Z" />
+                                </svg>
+                            </button>
                         </div>
+
                         <a class="btn-reserve" href="reserva.html" target="_blank" rel="noopener">RESERVAR</a>
                     </div>
                 </article>
 
                 <article class="room-card" data-room="Habitación 8" data-price="$Precio.00"
                     data-desc="Descripción de ejemplo para Habitación 8.">
-                    <img class="room-guitar" src="tmp/guitarra.png" alt="" aria-hidden="true" />
                     <div class="room-inner">
                         <div class="preview-frame">
                             <img src="src/default.png" alt="Vista previa de Habitación 8" />
                         </div>
+
                         <div class="room-info">
                             <h3 class="room-name">Tacambaro</h3>
                             <p class="room-price">$$$</p>
-                            <button class="btn-details" type="button">Detalles</button>
+                            <button class="btn-details" type="button">
+                                Detalles
+                                <svg class="info-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 2a10 10 0 1 0 0 20a10 10 0 0 0 0-20Zm0 7.2a1.2 1.2 0 1 1 0-2.4a1.2 1.2 0 0 1 0 2.4ZM10.8 11a1.2 1.2 0 0 1 2.4 0v7a1.2 1.2 0 0 1-2.4 0v-7Z" />
+                                </svg>
+                            </button>
                         </div>
+
                         <a class="btn-reserve" href="reserva.html" target="_blank" rel="noopener">RESERVAR</a>
                     </div>
                 </article>
 
                 <article class="room-card" data-room="Habitación 9" data-price="$Precio.00"
                     data-desc="Descripción de ejemplo para Habitación 9.">
-                    <img class="room-guitar" src="tmp/guitarra.png" alt="" aria-hidden="true" />
                     <div class="room-inner">
                         <div class="preview-frame">
                             <img src="src/default.png" alt="Vista previa de Habitación 9" />
                         </div>
+
                         <div class="room-info">
                             <h3 class="room-name">Uruapan</h3>
                             <p class="room-price">$$$</p>
-                            <button class="btn-details" type="button">Detalles</button>
+                            <button class="btn-details" type="button">
+                                Detalles
+                                <svg class="info-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 2a10 10 0 1 0 0 20a10 10 0 0 0 0-20Zm0 7.2a1.2 1.2 0 1 1 0-2.4a1.2 1.2 0 0 1 0 2.4ZM10.8 11a1.2 1.2 0 0 1 2.4 0v7a1.2 1.2 0 0 1-2.4 0v-7Z" />
+                                </svg>
+                            </button>
                         </div>
+
                         <a class="btn-reserve" href="reserva.html" target="_blank" rel="noopener">RESERVAR</a>
                     </div>
                 </article>
 
                 <article class="room-card" data-room="Habitación 10" data-price="$Precio.00"
                     data-desc="Descripción de ejemplo para Habitación 10.">
-                    <img class="room-guitar" src="tmp/guitarra.png" alt="" aria-hidden="true" />
                     <div class="room-inner">
                         <div class="preview-frame">
                             <img src="src/default.png" alt="Vista previa de Habitación 10" />
                         </div>
+
                         <div class="room-info">
                             <h3 class="room-name">Tlalpujagua</h3>
                             <p class="room-price">$$$</p>
-                            <button class="btn-details" type="button">Detalles</button>
+                            <button class="btn-details" type="button">
+                                Detalles
+                                <svg class="info-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 2a10 10 0 1 0 0 20a10 10 0 0 0 0-20Zm0 7.2a1.2 1.2 0 1 1 0-2.4a1.2 1.2 0 0 1 0 2.4ZM10.8 11a1.2 1.2 0 0 1 2.4 0v7a1.2 1.2 0 0 1-2.4 0v-7Z" />
+                                </svg>
+                            </button>
                         </div>
+
                         <a class="btn-reserve" href="reserva.html" target="_blank" rel="noopener">RESERVAR</a>
                     </div>
                 </article>
 
                 <article class="room-card" data-room="Habitación 11" data-price="$Precio.00"
                     data-desc="Descripción de ejemplo para Habitación 11.">
-                    <img class="room-guitar" src="tmp/guitarra.png" alt="" aria-hidden="true" />
                     <div class="room-inner">
                         <div class="preview-frame">
                             <img src="src/default.png" alt="Vista previa de Habitación 11" />
                         </div>
+
                         <div class="room-info">
                             <h3 class="room-name">Cuitzeo</h3>
                             <p class="room-price">$$$</p>
-                            <button class="btn-details" type="button">Detalles</button>
+                            <button class="btn-details" type="button">
+                                Detalles
+                                <svg class="info-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 2a10 10 0 1 0 0 20a10 10 0 0 0 0-20Zm0 7.2a1.2 1.2 0 1 1 0-2.4a1.2 1.2 0 0 1 0 2.4ZM10.8 11a1.2 1.2 0 0 1 2.4 0v7a1.2 1.2 0 0 1-2.4 0v-7Z" />
+                                </svg>
+                            </button>
                         </div>
+
                         <a class="btn-reserve" href="reserva.html" target="_blank" rel="noopener">RESERVAR</a>
                     </div>
                 </article>
 
                 <article class="room-card" data-room="Habitación 12" data-price="$Precio.00"
                     data-desc="Descripción de ejemplo para Habitación 12.">
-                    <img class="room-guitar" src="tmp/guitarra.png" alt="" aria-hidden="true" />
                     <div class="room-inner">
                         <div class="preview-frame">
                             <img src="src/default.png" alt="Vista previa de Habitación 12" />
                         </div>
+
                         <div class="room-info">
                             <h3 class="room-name">Cuanajo</h3>
                             <p class="room-price">$$$</p>
-                            <button class="btn-details" type="button">Detalles</button>
+                            <button class="btn-details" type="button">
+                                Detalles
+                                <svg class="info-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 2a10 10 0 1 0 0 20a10 10 0 0 0 0-20Zm0 7.2a1.2 1.2 0 1 1 0-2.4a1.2 1.2 0 0 1 0 2.4ZM10.8 11a1.2 1.2 0 0 1 2.4 0v7a1.2 1.2 0 0 1-2.4 0v-7Z" />
+                                </svg>
+                            </button>
                         </div>
+
                         <a class="btn-reserve" href="reserva.html" target="_blank" rel="noopener">RESERVAR</a>
                     </div>
                 </article>
-
             </section>
         </main>
 
@@ -259,12 +333,11 @@
             </div>
 
             <p class="copyright">
-                &copy; Hotel Quinta Dalam, 2026
+                &copy; Hotel Quinta Dalam, <span id="year"></span>
             </p>
         </footer>
     </div>
 
-    <!-- Modal Detalles -->
     <div class="modal" id="detailsModal" aria-hidden="true" role="dialog" aria-modal="true"
         aria-labelledby="modalTitle">
         <div class="modal-card" role="document">
@@ -279,10 +352,9 @@
     </div>
 
     <script>
-        // Año en footer
-        document.getElementById("year").textContent = new Date().getFullYear();
+        const yearEl = document.getElementById("year");
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-        // Modal Detalles
         const modal = document.getElementById("detailsModal");
         const modalTitle = document.getElementById("modalTitle");
         const modalSub = document.getElementById("modalSub");
@@ -294,7 +366,6 @@
             modalTitle.textContent = room;
             modalSub.textContent = price;
             modalDesc.textContent = desc;
-
             modal.classList.add("is-open");
             modal.setAttribute("aria-hidden", "false");
             document.body.classList.add("no-scroll");
