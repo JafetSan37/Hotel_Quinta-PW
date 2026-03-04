@@ -1,29 +1,29 @@
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-:root{
-  --panel-bg: rgba(245,245,245,.92);
+:root {
+  --panel-bg: rgba(245, 245, 245, .92);
   --text: #111;
   --muted: #8b8b8b;
-
-  --accent: #b46116;        /* borde naranja */
-  --active-pill: #bfeee8;   /* seleccionado en navbar */
-  --shadow: 0 16px 40px rgba(0,0,0,.18);
-
+  --accent: #b46116;
+  --active-pill: #bfeee8;
+  --shadow: 0 16px 40px rgba(0, 0, 0, .18);
   --reserve-bg: #0b4a78;
   --reserve-border: #083b60;
 }
 
-html, body { height: 100%; }
+html,
+body {
+  height: 100%;
+}
 
-body{
+body {
   margin: 0;
   position: relative;
   min-height: 100vh;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--text);
-
-  margin: 0;
-  min-height: 100vh;
 
   background-image: url("src/fondo.png");
   background-size: cover;
@@ -32,12 +32,24 @@ body{
   background-attachment: scroll;
 }
 
-.no-scroll{ overflow: hidden; }
+.no-scroll {
+  overflow: hidden;
+}
 
+.hero-top {
+  display: flex;
+  justify-content: center;
+  padding: 18px 12px 8px;
+}
 
+.hero-logo {
+  height: auto;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 10px 16px rgba(0, 0, 0, .25));
+}
 
-/* Panel centrado encima del fondo */
-.panel{
+.panel {
   width: min(1500px, calc(100% - 48px));
   margin: 24px auto;
   background: var(--panel-bg);
@@ -46,37 +58,21 @@ body{
   overflow: hidden;
 }
 
-/* Header dentro del panel */
-.panel-header{
+.panel-header {
   padding: 18px 18px 6px;
   text-align: center;
 }
 
-/* Logo arriba, sobre el fondo */
-.hero-top{
-  display: flex;
-  justify-content: center;
-  padding: 18px 12px 8px; /* espacio arriba */
-}
-
-.hero-logo{
-  height: 54px; /* ajusta a tu gusto */
-  width: auto;
-  display: block;
-  filter: drop-shadow(0 10px 16px rgba(0,0,0,.25));
-}
-
-/* Navbar con separadores y pill activo */
-.nav{
+.nav {
   display: inline-flex;
   align-items: center;
   gap: 14px;
   padding: 10px 16px;
-  background: rgba(255,255,255,.45);
+  background: rgba(255, 255, 255, .45);
   border-radius: 6px;
 }
 
-.nav a{
+.nav a {
   text-decoration: none;
   color: #3a3a3a;
   font-size: 14px;
@@ -84,154 +80,142 @@ body{
   border-radius: 999px;
 }
 
-.nav a.active{
+.nav a.active {
   background: var(--active-pill);
   color: #2a2a2a;
 }
 
-.nav-sep{
+.nav-sep {
   width: 1px;
   height: 20px;
-  background: rgba(0,0,0,.25);
+  background: rgba(0, 0, 0, .25);
 }
 
-/* Encabezado */
-.headline{
+.headline {
   margin: 18px 0 12px;
   font-size: 24px;
   font-weight: 500;
 }
 
-/* Contenido */
-.content{
+.content {
   padding: 6px 18px 18px;
 }
 
-/* Grid escalable */
-.rooms-grid{
+.rooms-grid {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 44px 52px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px 70px;
   padding: 6px 4px 10px;
 }
 
-/* Card */
-.room-card{
-  position: relative;
+.room-card {
   border: 2px solid var(--accent);
-  background: rgba(240,240,240,.9);
-  padding: 18px 20px 18px 64px; 
-  min-height: 130px;           
+  background: rgba(240, 240, 240, .9);
+  padding: 18px 20px;
+  min-height: 170px;
 }
 
-/* Guitarra superpuesta */
-.room-guitar{
-  position: absolute;
-  top: -18px;
-  left: -10px;
-  width: 72px;
-  height: auto;
-  transform: rotate(-18deg);
-  transform-origin: left center;
-  pointer-events: none;
-}
-
-/* Interior */
-.room-inner{
+.room-inner {
+  position: relative;
   display: grid;
-  grid-template-columns: 190px 1fr 180px;
-  align-items: center;
-  gap: 16px;
+  grid-template-columns: 40% 1fr;
+  gap: 18px;
+  align-items: start;
 }
 
-/* Frame imagen */
-.preview-frame{
-  width: 190px;   
-  height: 105px;  
+.preview-frame {
+  width: 100%;
+  height: 170px;
   background: #3a3a3a;
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 12px;
+  padding: 12px;
   display: grid;
   place-items: center;
 }
 
-.preview-frame img{
+.preview-frame img {
   width: 100%;
   height: 100%;
-  border-radius: 6px;
+  border-radius: 8px;
   object-fit: cover;
   display: block;
-  background: #f5f5f5;
 }
 
-/* Info */
-.room-info{
+.room-info {
   min-width: 0;
+  padding-right: 190px;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-.room-name{
-  margin: 0 0 6px;
-  font-size: 18px;
-  font-weight: 500;
+.room-name {
+  margin: 0 0 10px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.05;
 }
 
-.room-price{
-  margin: 0 0 8px;
-  font-size: 18px;
-  font-weight: 500;
+.room-price {
+  margin-top: auto;
+  margin-bottom: auto;
+
+  font-size: 28px;
+  font-weight: 800;
 }
 
-.btn-details{
+.btn-details {
+  margin-top: auto;
+
   border: 0;
   background: transparent;
   color: var(--muted);
-  font-size: 14px;
-  padding: 0;
+  font-size: 16px;
   cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.btn-details:hover{
+.btn-details:hover {
   text-decoration: underline;
 }
 
-/* Reservar */
-.btn-reserve{
-  flex: 0 0 auto;
+.info-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.btn-reserve {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
   text-decoration: none;
   color: #fff;
   background: var(--reserve-bg);
   border: 2px solid var(--reserve-border);
-  padding: 10px 16px;
-  border-radius: 4px;
+  padding: 12px 18px;
+  border-radius: 6px;
   font-size: 13px;
   letter-spacing: .5px;
 }
 
-.btn-reserve:hover{
+.btn-reserve:hover {
   filter: brightness(.95);
 }
 
-/* Footer listo para usar */
-.site-footer{
-  padding: 18px;
-  border-top: 1px solid rgba(0,0,0,.12);
-  background: rgba(255,255,255,.35);
-}
-
-.footer-inner{
-  text-align: center;
-  color: #3a3a3a;
-  font-size: 14px;
-}
-
-.site-footer{
+.site-footer {
   padding: 18px 12px;
   text-align: center;
-  background: rgba(255,255,255,.35);
-  border-top: 1px solid rgba(0,0,0,.12);
+  background: rgba(255, 255, 255, .35);
+  border-top: 1px solid rgba(0, 0, 0, .12);
 }
 
-.social{
+.social {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,7 +223,7 @@ body{
   margin-bottom: 10px;
 }
 
-.social-link{
+.social-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -249,53 +233,51 @@ body{
   transition: transform .15s ease, background-color .15s ease;
 }
 
-.social-link:hover{
+.social-link:hover {
   transform: translateY(-2px);
-  background: rgba(0,0,0,.06);
+  background: rgba(0, 0, 0, .06);
 }
 
-/* accesibilidad: que se vea al navegar con teclado */
-.social-link:focus-visible{
+.social-link:focus-visible {
   outline: 3px solid rgba(11, 74, 120, .55);
   outline-offset: 3px;
 }
 
-.social-icon{
+.social-icon {
   width: 40px;
   height: 40px;
   display: block;
 }
 
-.copyright{
+.copyright {
   margin: 0;
   font-size: 14px;
-  color: rgba(0,0,0,.75);
+  color: rgba(0, 0, 0, .75);
 }
 
-/* Modal Detalles */
-.modal{
+.modal {
   position: fixed;
   inset: 0;
   display: none;
-  background: rgba(0,0,0,.45);
+  background: rgba(0, 0, 0, .45);
   padding: 18px;
 }
 
-.modal.is-open{
+.modal.is-open {
   display: grid;
   place-items: center;
 }
 
-.modal-card{
+.modal-card {
   width: min(560px, 100%);
   background: #fff;
   border-radius: 12px;
   padding: 16px 16px 12px;
-  box-shadow: 0 18px 40px rgba(0,0,0,.22);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, .22);
   position: relative;
 }
 
-.modal-close{
+.modal-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -306,29 +288,29 @@ body{
   padding: 8px;
 }
 
-.modal-title{
+.modal-title {
   margin: 2px 0 6px;
   font-size: 20px;
 }
 
-.modal-sub{
+.modal-sub {
   margin: 0 0 10px;
   color: #555;
   font-weight: 600;
 }
 
-.modal-desc{
+.modal-desc {
   margin: 0 0 12px;
   line-height: 1.45;
   color: #222;
 }
 
-.modal-actions{
+.modal-actions {
   display: flex;
   justify-content: flex-end;
 }
 
-.btn-ok{
+.btn-ok {
   border: 0;
   background: #111;
   color: #fff;
@@ -337,61 +319,81 @@ body{
   cursor: pointer;
 }
 
-.btn-ok:hover{ opacity: .92; }
+.btn-ok:hover {
+  opacity: .92;
+}
 
-/* Responsive */
-@media (max-width: 520px){
-  .panel{ width: calc(100% - 20px); }
-  @media (max-width: 650px){
+@media (max-width: 700px) {
+  .nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    text-align: center;
+  }
 
-  /* 1) una sola columna de cards */
-  .rooms-grid{
+  .nav-sep {
+    display: none;
+  }
+
+  .social-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .social {gap: 45px;}
+}
+
+@media (max-width: 650px) {
+  .hero-logo {
+    width: 380px;
+  }
+
+  .rooms-grid {
     grid-template-columns: 1fr;
     gap: 26px;
   }
 
-  /* 2) el contenido interno de cada card en vertical */
-  .room-inner{
-    display: flex;              /* fuerza columna aunque antes fuera grid */
+  .room-inner {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
   }
 
-  /* 3) preview grande arriba */
-  .preview-frame{
-    width: min(320px, 100%);
-    height: 180px;
+  .room-name {
+    font-size: 30px;
   }
 
-  /* 4) texto centrado */
-  .room-info{
+  .room-price {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+
+  .preview-frame {
+    height: 200px;
+  }
+
+  .room-info {
     width: 100%;
     text-align: center;
-    padding-right: 0;           /* IMPORTANTÍSIMO si antes pusiste padding-right */
+    padding-right: 0;
   }
 
-  /* 5) botón reservar NO debe estar absoluto en móvil (si lo tienes así) */
-  .btn-reserve{
-    position: static;           /* quita absolute */
-    transform: none;            /* por si tenías translateY */
-    width: 170px;
-    margin: 6px auto 0;
-    text-align: center;
+  .btn-details {
+    margin-top: 30px;
+    justify-content: center;
+    width: 100%;
   }
 
-  /* 6) guitarra un poco más chica para que no estorbe */
-  .room-guitar{
-    width: 56px;
-    top: -16px;
-    left: -10px;
+  .btn-reserve {
+    position: static;
+    width: 180px;
+    margin: -10px auto 0;
   }
+
 }
-  .nav{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 16px;
-    text-align: center;
+
+@media (max-width: 520px) {
+  .panel {
+    width: calc(100% - 20px);
   }
-  .nav-sep{display: none;}
 }
