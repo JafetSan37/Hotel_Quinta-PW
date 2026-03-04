@@ -2,87 +2,104 @@
 <html lang="es-MX">
 
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <title>Inicio - Hotel Quinta Dalam</title>
 </head>
 
 <body>
-    <header>
-        <h1 align="center">
-            <i>Hotel Quinta Dalam</i>
-        </h1><br>
+    <header class="hero-top">
+        <h1 style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Hotel Quinta Dalam</h1>
     </header>
-    <nav>
-        <div align="center">
-            <b>Inicio</b> |
-            <a href="catalogo2.html">Habitaciones</a> |
-            <a href="mision.html">Misión</a> |
-            <a href="vision.html">Visión</a> |
-            <a href="contacto.htm">Contacto</a>
-        </div>
-    </nav>
 
-    <main>
-    <section id="hero" align="center">
-        <h2>Tus próximas vacaciones mágicas te esperan con nosotros...</h2>
-        <a href="reservaciones.html"><button>Reservar Ahora</button></a>
-    </section>
-    <hr>
+    <div class="panel">
+        <header class="panel-header">
+            <nav class="nav" aria-label="Navegación principal">
+                <a class="active" href="index.html">Inicio</a>
+                <span class="nav-sep" aria-hidden="true"></span>
+                <a href="catalogo.htm">Habitaciones</a>
+                <span class="nav-sep" aria-hidden="true"></span>
+                <a href="mision.html">Misión</a>
+                <span class="nav-sep" aria-hidden="true"></span>
+                <a href="vision.html">Visión</a>
+                <span class="nav-sep" aria-hidden="true"></span>
+                <a href="contacto.htm">Contacto</a>
+            </nav>
+        </header>
 
-    <section id="experiencia" align="center">
-        <h3>¿Quieres salir de lo cotidiano?</h3>
-        <p>Descubre la esencia de los Pueblos Mágicos de Michoacán.</p>
-        <img src="tmp/IMG/viejitos.png" alt="Danza de los viejitos" width="250"> 
+        <main class="content">
+            <section class="seccion-centrada">
+                <h2>Tus próximas vacaciones mágicas te esperan con nosotros...</h2>
+            </section>
+            
+            <section class="fila-informativa">
+                <div class="texto-info">
+                    <h3>¿Quieres salir de lo cotidiano?</h3>
+                    <p>Descubre la esencia de los Pueblos Mágicos de Michoacán.</p>
+                </div>
+                <img src="tmp/IMG/viejitos.png" alt="Danza de los viejitos" class="img-info">
+            </section>
+
+            <section class="fila-informativa reversa">
+                <div class="texto-info">
+                    <h3>Espacio tranquilo para toda la familia</h3>
+                    <p>Relájate en nuestras instalaciones diseñadas para tu máximo confort.</p>
+                </div>
+                <img src="tmp/IMG/hotel-fuera.jpg" alt="Vista exterior del hotel" class="img-info">
+            </section>
+
+            <section class="seccion-centrada">
+                <h3>Habitaciones cómodas con temática de los pueblos mágicos de Michoacán</h3>
+                
+                <div class="habitacion-vista-rapida">
+                    <h4>Habitación 102 - Paracho</h4>
+                    <img src="tmp/IMG/h_paracho1.jpg" alt="Habitación Paracho" class="img-habitacion">
+                </div>
+                
+                <div class="habitacion-vista-rapida">
+                    <h4>Habitación 104 - Pátzcuaro</h4>
+                    <img src="tmp/IMG/h_patzcuaro1.jpg" alt="Habitación Patzcuaro" class="img-habitacion">
+                </div>
+                <br><br>
+                <a href="catalogo.htm"><button class="btn-secundario">Ver Habitaciones</button></a>
+            </section>
+
+            <hr style="border: 1px solid rgba(0,0,0,0.1); margin: 30px 0;">
+
+            <section class="seccion-centrada">
+                <h2>¿Listo para vivir la magia?</h2>
+                <p>Asegura tu lugar en nuestro hotel hoy mismo.</p><br>
+                <a href="reservaciones.html"><button class="btn-primario">Reservar Ahora</button></a>
+            </section>
+
+            <section class="seccion-centrada">
+                <h3>Sobre Nosotros</h3>
+                <p>En Quinta Dalam somos un hotel que busca ofrecerte la mejor experiencia y dejar una huella positiva en la comunidad, 
+                    formando una armonía entre nuestras instalaciones y el entorno. Nuestras habitaciones contienen el espíritu de Michoacán, 
+                    donde cada espacio representa un municipio emblemático, listas para recibir a quienes busquen amaneceres, atardeceres 
+                    y fines de semana llenos de paz, tradición y amor.</p>
+                <br>
+                <a href="mision.html"><button class="btn-primario">Ver Misión y Visión</button></a>
+            </section>
+        </main>
         
-        <h4>Espacio tranquilo para toda la familia</h4>
-        <img src="tmp/IMG/hotel-fuera.jpg" alt="Vista exterior del hotel" width="250">
-    </section>
-    <hr>
-
-    <section id="habitaciones-destacadas" align="center">
-        <h3>Habitaciones cómodas con temática de los pueblos mágicos de Michoacán</h3>
-        <!--Recordar que necesitamos fotos reales de cada habitación para insertarlas!-->
-        <div class="habitacion-vista-rapida">
-            <h4>Habitación 102 - Paracho</h4>
-            <img src="tmp/IMG/h_paracho1.jpg" alt="Camas de la habitación Paracho" width="200">
-        </div>
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <a href="https://www.facebook.com/profile.php?id=61584681841684" target="_blank">
+                    <img src="src/facebook.png" width="30px" height="30px" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/quintadalam" target="_blank">
+                    <img src="src/instagram.png" width="30px" height="30px" alt="Instagram">
+                </a>
+                <a href="https://www.tiktok.com/@quintadalam" target="_blank">
+                    <img src="src/tiktok.png" width="30px" height="30px" alt="TikTok">
+                </a>
+                <br><br>
+                <p>&copy; Hotel Quinta Dalam, 2026</p>
+            </div>
+        </footer>
         
-        <div class="habitacion-vista-rapida">
-            <h4>Habitación 104 - Pátzcuaro</h4>
-            <img src="tmp/IMG/h_patzcuaro1.jpg" alt="Camas de la habitación Patzcuaro" width="200">
-        </div>
-        <br>
-        <a href="catalogo.htm"><button>Ver Habitaciones</button></a>
-    </section>
-    <hr>
-
-    <section id="nosotros" align="center">
-        <h3>Sobre Nosotros</h3>
-        <p>En Quinta Dalam somos un hotel que busca ofrecerte la mejor experiencia y dejar una huella positiva en la comunidad, 
-            formando una armonía entre nuestras instalaciones y el entorno. Nuestras habitaciones contienen el espíritu de Michoacán, 
-            donde cada espacio representa un municipio emblemático, listas para recibir a quienes busquen amaneceres, atardeceres y 
-            fines de semana llenos de paz, tradición y amor.</p>
-        <a href="mision.html"><button>Ver Misión y Visión</button></a>
-    </section>
-</main>
-
-    <footer>
-        <a href="https://www.facebook.com/profile.php?id=61584681841684" target="_blank">
-            <img src="src/facebook.png" width="40px" height="40px">
-        </a>
-
-        <a href="https://www.instagram.com/quintadalam?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-            target="_blank">
-            <img id="instagram" src="src/instagram.png" width="40px" height="40px">
-        </a>
-
-        <a href="https://www.tiktok.com/@quintadalam?lang=es" target="_blank">
-            <img id="tiktok" src="src/tiktok.png" width="40px" height="40px">
-        </a>
-
-        <br>
-        &copy; Hotel Quinta Dalam, 2026
-    </footer>
+    </div>
 </body>
 
 </html>
