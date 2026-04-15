@@ -25,7 +25,7 @@ function Habitaciones({setPagina}) {
       <div className="room-grid">
         {habitaciones.map(hab => (
           <div key={hab.id} className="room-card">
-            <img src={hab.imagen} alt={hab.nombre} className="img-habitacion"/>
+            <img src={hab.imagen} alt={hab.nombre} className="img-habitacion" onClick={() => setSeleccionada(hab)}/>
             <div className="room-info">
               <h3>{hab.nombre}</h3>
               <p className="price">{hab.precio} / noche</p>

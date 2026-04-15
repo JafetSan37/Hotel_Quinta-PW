@@ -20,29 +20,8 @@ function Inicio({ setPagina }) {
 
   return (
     <>
-      <section className="seccion-centrada">
-        <h2>Tus próximas vacaciones mágicas te esperan con nosotros...</h2>
-      </section>
-
-      <section className="fila-informativa">
-        <div className="texto-info">
-          <h3>¿Quieres salir de lo cotidiano?</h3>
-          <p>Descubre la esencia de los Pueblos Mágicos de Michoacán.</p>
-        </div>
-        {/* Ruta: /resources-tmp/IMG/viejitos.png */}
-        <img src="/resources-tmp/IMG/viejitos.png" alt="Danza de los viejitos" className="img-info"/>
-      </section>
-
-      <section className="fila-informativa reversa">
-        <div className="texto-info">
-          <h3>Espacio tranquilo para toda la familia</h3>
-          <p>Relájate en nuestras instalaciones diseñadas para tu máximo confort.</p>
-        </div>
-        <img src="/resources-tmp/IMG/hotel-fuera.jpg" alt="Vista exterior del hotel" className="img-info"/>
-      </section>
-
-      <section className='seccion-centrada'>
-        <h3>Habitaciones cómodas con temática de los pueblos mágicos de Michoacán</h3>
+            <section className='seccion-centrada'>
+        <h2>Habitaciones cómodas con temática de los pueblos mágicos de Michoacán</h2>
 
         <br/><br/>
 
@@ -64,6 +43,22 @@ function Inicio({ setPagina }) {
         >
           Ver Habitaciones
         </a>
+      </section>
+
+      <section className="fila-informativa">
+        <div className="texto-info">
+          <h3>¿Quieres salir de lo cotidiano?</h3>
+          <p>Descubre la esencia de los Pueblos Mágicos de Michoacán.</p>
+        </div>
+        <img src="/resources-tmp/IMG/viejitos.png" alt="Danza de los viejitos" className="img-info"/>
+      </section>
+
+      <section className="fila-informativa reversa">
+        <div className="texto-info">
+          <h3>Espacio tranquilo para toda la familia</h3>
+          <p>Relájate en nuestras instalaciones diseñadas para tu máximo confort.</p>
+        </div>
+        <img src="/resources-tmp/IMG/hotel-fuera.jpg" alt="Vista exterior del hotel" className="img-info"/>
       </section>
 
       <hr style={{ border: '1px solid rgba(0,0,0,0.1)', margin: '30px 0' }}/>
