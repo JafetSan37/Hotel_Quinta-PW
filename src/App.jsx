@@ -110,7 +110,7 @@ function App() {
       <div className="bg" ref={bgRef} aria-hidden="true"></div>
 
       <header className={`hero-top ${scrolled ? "shrink" : ""}`}>
-        <img className="hero-logo" src={scrolled ? "/images-src/Logo min.png" : "/images-src/logo.png"} alt="Hotel Quinta Dalam" />
+        <img className="hero-logo" src={scrolled ? "/images-src/Logo min.png" : "/images-src/logo.png"} alt="Hotel Quinta Dalam"/>
 
         <div className={`booking-bar ${scrolled ? "shrink" : ""}`}>
           <div className="item" ref={entradaRef} onClick={() => handleOpenCalendar("entrada", entradaRef)}>
@@ -193,11 +193,11 @@ function App() {
 
       <div className="panel">
         <main className="content">
-          {pagina === 'inicio' && <Inicio setPagina={setPagina} />}
-          {pagina === 'habitaciones' && <Habitaciones setPagina={setPagina} />}
+          {pagina === 'inicio' && <Inicio setPagina={setPagina}/>}
+          {pagina === 'habitaciones' && <Habitaciones setPagina={setPagina}/>}
           {pagina === 'nosotros' && <Nosotros />}
-          {pagina === 'reservaciones' && <Reservaciones setPagina={setPagina} />}
-          {pagina === 'consulta' && <Consulta setPagina={setPagina} />}
+          {pagina === 'reservaciones' && <Reservaciones setPagina={setPagina}/>}
+          {pagina === 'consulta' && <Consulta setPagina={setPagina}/>}
         </main>
 
         <Footer />

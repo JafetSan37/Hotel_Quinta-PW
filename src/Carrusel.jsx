@@ -14,8 +14,7 @@ function Modal({ habitacion, cerrar }) {
         <h2>{habitacion.nombre}</h2>
         <p>{habitacion.precio} por noche</p>
 
-        {/* 🔥 Aquí vive el carrusel */}
-        <Carrusel imagenes={habitacion.imagenes} />
+        <Carrusel imagenes={habitacion.imagenes}/>
 
         <p>{habitacion.desc}</p>
 

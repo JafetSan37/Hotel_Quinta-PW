@@ -105,32 +105,32 @@ function Reservaciones({ setPagina }) {
           {/* Validaciones añadidas */}
           <div className={obtenerClaseGrupo('usuario')}>
             <label>Usuario:</label>
-            <input type="text" name="usuario" placeholder="Ej. juan_perez" value={valores.usuario} onChange={validarCampo} onKeyUp={validarCampo} onBlur={validarCampo} required />
+            <input type="text" name="usuario" placeholder="Ej. juan_perez" value={valores.usuario} onChange={validarCampo} onKeyUp={validarCampo} onBlur={validarCampo} required/>
             <p className="formulario__input-error">De 4 a 16 caracteres (letras, números, guion bajo).</p>
           </div>
 
           <div className={obtenerClaseGrupo('nombre')}>
             <label>Nombre Completo:</label>
-            <input type="text" name="nombre" placeholder="Ej. Juan Pérez" value={valores.nombre} onChange={validarCampo} onKeyUp={validarCampo} onBlur={validarCampo} required />
+            <input type="text" name="nombre" placeholder="Ej. Juan Pérez" value={valores.nombre} onChange={validarCampo} onKeyUp={validarCampo} onBlur={validarCampo} required/>
             <p className="formulario__input-error">El nombre solo puede contener letras y espacios.</p>
           </div>
 
           {/* Añadidos para las validaciones, se señalan requisitos, consejos y avisos en caso de errores */}
           <div className={obtenerClaseGrupo('password')}>
             <label>Contraseña:</label>
-            <input type="password" name="password" placeholder="Incluye símbolos si deseas" value={valores.password} onChange={validarCampo} onKeyUp={validarCampo} onBlur={validarCampo} required />
+            <input type="password" name="password" placeholder="Incluye símbolos si deseas" value={valores.password} onChange={validarCampo} onKeyUp={validarCampo} onBlur={validarCampo} required/>
             <p className="formulario__input-error">La contraseña debe tener entre 4 y 12 caracteres.</p>
           </div>
 
           <div className={obtenerClaseGrupo('correo')}>
             <label>Correo Electrónico:</label>
-            <input type="email" name="correo" placeholder="ejemplo@correo.com" value={valores.correo} onChange={validarCampo} onKeyUp={validarCampo} onBlur={validarCampo} required />
+            <input type="email" name="correo" placeholder="ejemplo@correo.com" value={valores.correo} onChange={validarCampo} onKeyUp={validarCampo} onBlur={validarCampo} required/>
             <p className="formulario__input-error">Ingresa un correo válido con @ y dominio.</p>
           </div>
 
           <div className={obtenerClaseGrupo('telefono')}>
             <label>Teléfono:</label>
-            <input type="tel" name="telefono" placeholder="4431234567" value={valores.telefono} onChange={validarCampo} onKeyUp={validarCampo} onBlur={validarCampo} required />
+            <input type="tel" name="telefono" placeholder="4431234567" value={valores.telefono} onChange={validarCampo} onKeyUp={validarCampo} onBlur={validarCampo} required/>
             <p className="formulario__input-error">El teléfono debe tener exactamente 10 números (marcación a 10 dígitos).</p>
           </div>
         </fieldset>
@@ -170,13 +170,13 @@ function Reservaciones({ setPagina }) {
           <p className="formulario__input-error">Por favor, selecciona una habitación válida.</p>
           </div>
           <label>Número de Huéspedes:</label>
-          <input type="number" min="1" max="4" placeholder="1" required />
+          <input type="number" min="1" max="4" placeholder="1" required/>
         </fieldset>
         
         {/* Checkbox necesario para la validación final */}
         <div className="formulario__grupo" id="grupo__terminos" style={{ marginBottom: '20px' }}>
           <label style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
-            <input type="checkbox" name="terminos" checked={valores.terminos} onChange={handleCheckbox} />
+            <input type="checkbox" name="terminos" checked={valores.terminos} onChange={handleCheckbox}/>
             Acepto los Términos y Condiciones
           </label>
         </div>

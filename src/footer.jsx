@@ -32,22 +32,22 @@ function Footer() {
           <h4 className="footer-title">Síguenos</h4>
           <div className="social-links">
             <a className="social-link" href="https://www.facebook.com/profile.php?id=61584681841684" target="_blank" rel="noopener noreferrer">
-              <img src="/images-src/facebook.png" alt="Facebook" className="social-icon" />
+              <img src="/images-src/facebook.png" alt="Facebook" className="social-icon"/>
             </a>
             <a className="social-link" href="https://www.instagram.com/quintadalam" target="_blank" rel="noopener noreferrer">
-              <img src="/images-src/instagram.png" alt="Instagram" className="social-icon" />
+              <img src="/images-src/instagram.png" alt="Instagram" className="social-icon"/>
             </a>
             <a className="social-link" href="https://www.tiktok.com/@quintadalam" target="_blank" rel="noopener noreferrer">
-              <img src="/images-src/tiktok.png" alt="TikTok" className="social-icon" />
+              <img src="/images-src/tiktok.png" alt="TikTok" className="social-icon"/>
             </a>
           </div>
           
           <div className="validators-container">
             <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">
-              <img style={{ height: '31px' }} src="https://www.w3.org/assets/logos/w3c-2025/svg/margins/w3c-letters-bg-white.svg" alt="Validador HTML" />
+              <img style={{ height: '31px' }} src="https://www.w3.org/assets/logos/w3c-2025/svg/margins/w3c-letters-bg-white.svg" alt="Validador HTML"/>
             </a>
             <a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener noreferrer">
-              <img style={{ height: '31px' }} src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Validador CSS" />
+              <img style={{ height: '31px' }} src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Validador CSS"/>
             </a>
           </div>
         </div>

@@ -91,13 +91,13 @@ function Consulta({ setPagina }) {
             <legend>Datos de Acceso</legend>
             <div className={obtenerClaseGrupo('usuarioCorreo')}>
               <label>Usuario o Correo Electrónico:</label>
-              <input type="text" name="usuarioCorreo" placeholder="Ej. juan_perez o juan@correo.com" value={valores.usuarioCorreo} onChange={validarCampo} onKeyUp={validarCampo} onBlur={validarCampo} required />
+              <input type="text" name="usuarioCorreo" placeholder="Ej. juan_perez o juan@correo.com" value={valores.usuarioCorreo} onChange={validarCampo} onKeyUp={validarCampo} onBlur={validarCampo} required/>
               <p className="formulario__input-error">Ingresa un usuario (4-16 caracteres) o un correo válido.</p>
             </div>
 
             <div className={obtenerClaseGrupo('password')}>
               <label>Contraseña:</label>
-              <input type="password" name="password" placeholder="Tu contraseña" value={valores.password} onChange={validarCampo} onKeyUp={validarCampo} onBlur={validarCampo} required />
+              <input type="password" name="password" placeholder="Tu contraseña" value={valores.password} onChange={validarCampo} onKeyUp={validarCampo} onBlur={validarCampo} required/>
               <p className="formulario__input-error">La contraseña debe tener entre 4 y 12 caracteres.</p>
             </div>
           </fieldset>
@@ -150,20 +150,20 @@ function Consulta({ setPagina }) {
             <legend>Búsqueda de Huésped</legend>
             <div className={obtenerClaseGrupo('nombre')}>
               <label>Nombre Completo:</label>
-              <input type="text" name="nombre" placeholder="Ej. Juan Pérez" value={valores.nombre} onChange={validarCampo} onKeyUp={validarCampo} onBlur={validarCampo} required />
+              <input type="text" name="nombre" placeholder="Ej. Juan Pérez" value={valores.nombre} onChange={validarCampo} onKeyUp={validarCampo} onBlur={validarCampo} required/>
               <p className="formulario__input-error">El nombre solo puede contener letras y espacios.</p>
             </div>
 
             <div className={obtenerClaseGrupo('correo')}>
               <label>Correo Electrónico:</label>
-              <input type="email" name="correo" placeholder="ejemplo@correo.com" value={valores.correo} onChange={validarCampo} onKeyUp={validarCampo} onBlur={validarCampo} required />
+              <input type="email" name="correo" placeholder="ejemplo@correo.com" value={valores.correo} onChange={validarCampo} onKeyUp={validarCampo} onBlur={validarCampo} required/>
               <p className="formulario__input-error">Ingresa un correo válido con @ y dominio.</p>
             </div>
 
             {/* 4. Cambiamos el input de Teléfono por Fecha */}
             <div className={obtenerClaseGrupo('fecha')}>
               <label>Fecha de Llegada (Check-in):</label>
-              <input type="date" name="fecha" value={valores.fecha} onChange={validarCampo} onBlur={validarCampo} required />
+              <input type="date" name="fecha" value={valores.fecha} onChange={validarCampo} onBlur={validarCampo} required/>
               <p className="formulario__input-error">Por favor, selecciona una fecha válida.</p>
             </div>
           </fieldset>

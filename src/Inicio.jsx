@@ -30,7 +30,7 @@ function Inicio({ setPagina }) {
           <p>Descubre la esencia de los Pueblos Mágicos de Michoacán.</p>
         </div>
         {/* Ruta: /resources-tmp/IMG/viejitos.png */}
-        <img src="/resources-tmp/IMG/viejitos.png" alt="Danza de los viejitos" className="img-info" />
+        <img src="/resources-tmp/IMG/viejitos.png" alt="Danza de los viejitos" className="img-info"/>
       </section>
 
       <section className="fila-informativa reversa">
@@ -38,7 +38,7 @@ function Inicio({ setPagina }) {
           <h3>Espacio tranquilo para toda la familia</h3>
           <p>Relájate en nuestras instalaciones diseñadas para tu máximo confort.</p>
         </div>
-        <img src="/resources-tmp/IMG/hotel-fuera.jpg" alt="Vista exterior del hotel" className="img-info" />
+        <img src="/resources-tmp/IMG/hotel-fuera.jpg" alt="Vista exterior del hotel" className="img-info"/>
       </section>
 
       <section className='seccion-centrada'>
@@ -51,7 +51,7 @@ function Inicio({ setPagina }) {
           pagination={{ clickable: true }}>
           {habitaciones.map((img, i) => (
             <SwiperSlide key={i}>
-              <img src={img} className="img-habitacion" />
+              <img src={img} className="img-habitacion"/>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -66,11 +66,11 @@ function Inicio({ setPagina }) {
         </a>
       </section>
 
-      <hr style={{ border: '1px solid rgba(0,0,0,0.1)', margin: '30px 0' }} />
+      <hr style={{ border: '1px solid rgba(0,0,0,0.1)', margin: '30px 0' }}/>
       {/* Sección de Reservación */}
       <section className="seccion-centrada">
         <h2>¿Listo para vivir la magia?</h2>
-        <p>Asegura tu lugar en nuestro hotel hoy mismo.</p><br />
+        <p>Asegura tu lugar en nuestro hotel hoy mismo.</p><br/>
         <a
           onClick={() => setPagina('reservaciones')}
           className="btn-primario"
@@ -80,11 +80,11 @@ function Inicio({ setPagina }) {
         </a>
       </section>
       {/* Sección de Consulta */}
-      <hr style={{ border: '1px solid rgba(0,0,0,0.1)', margin: '30px 0' }} />
+      <hr style={{ border: '1px solid rgba(0,0,0,0.1)', margin: '30px 0' }}/>
 
       <section className="seccion-centrada">
         <h2>¿Ya tienes reservación? ¡Consúltala ahora!</h2>
-        <p>Revisa los detalles de tu estancia y mantén todo bajo control.</p><br />
+        <p>Revisa los detalles de tu estancia y mantén todo bajo control.</p><br/>
         <a 
           onClick={() => setPagina('consulta')} 
           className="btn-primario" 
